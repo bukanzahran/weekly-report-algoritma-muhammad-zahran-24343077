@@ -72,8 +72,9 @@ int main(){
   printf("Hello World!");
   return0;
 }
-
+```
 **Job Sheet 1 memberikan pembahasan lengkap untuk setiap topik dalam modul, dari konsep dasar algoritma hingga pemrograman menggunakan bahasa C dengan IDE**
+
 
 
 
@@ -113,5 +114,6 @@ Latihan pada joob sheet ini, yaitu:
 3. **Program menghitung luas dari segitiga:** program sederhana yang memungkinkan pengguna untuk memasukkan nilai alas dan tinggi segitiga, kemudian menghitung luasnya berdasarkan rumus: `Luas Segitiga=12×Alas×Tinggi`. Dimana pada program ini sudah diketahui bahwa panjang alas segitiga adalah 8 cm dan tinggi segitiga adalah 5 cm, maka dapat langsung menghitung luas segitiga dengan rumus.
 4. **Program menghitung luas persegi panjang:** program ini merupakan program yang sangat sederhana. Yang memungkinkan kita untuk menghitung luas persegi panjang dengan rumus:
 `Luas Persegi Panjang=Panjang×Lebar`. Dimana sudah diketahui panjang = 10 cm dan lebar = 5 cm, sehingga langsung menggunakan rumus di atas untuk menghitung luasnya.
+
 
 
