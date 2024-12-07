@@ -77,4 +77,41 @@ int main(){
 
 
 
+### Joob Sheet 2 - _Pemrograman Dasar C_
+**Pokok Materi**
+1. **Struktur Dasar Program C**
+   
+   Ada dua stuktur program C:
+   - Bagian include: `#include <stdio.h>`
+   - Blok fungsi main : berisi statement.
+     
+   Syntax bahasa C:
+   - **Include:** kode #include berfungsi mengimpor fungsi-fungsi yang sudah didefinisikan pada header file yang berisi definisi fungsi yang sudah dibuat untuk mengimpor file header (seperti `stdio.h`) yang menyediakan fungsi tambahan seperti `printf`.
+   - **Header file:** adalah file yang berisi definisi fungsi yang sudah dibuat.
+   - **Main Function:** fungsi utama yang wajib ada dalam program, fungsi ini akan dieksekusi pertama kali saat program dijalankan. Fungsi ini ada dua: mengembalikan nilai setelah dieksekusi (`int main()`) atau tidak mengembalikan nilai apapun (`void main()`).
+   - **Statements:** perintah- perintah dalam program yang harus diakhiri dengan tanda semikolon `;`.
+   - **Semicolon:** tanda yang digunakan untuk menandakan berakhirnya suatu perintah.
+   - **Identifier:** nama yang digunakan untuk mengidentifikasi variabel, fungsi, atau semua item yang didefinisikan oleh programmer.
+   - **Comments:** Digunakan untuk menambahkan catatan dalam kode tanpa memengaruhi eksekusi.
+   - **Whitespace:** Spasi, tab, atau baris baru yang membantu keterbacaan kode.
+
+2. **Proses Input dan Output**
+   - **Input:** data yang dimasukan ke program biasanya diambil dari perangakat inputan seperti keyboard.
+     Ada dua fungsi  untuk menampilkan input
+     - **`scanf`:** Digunakan mengambil input dari pengguna, menggunakan format sesuai dengan tipe data yang ingin diambil (misalnya `%d` untuk integer).
+     - **`gets` dan `fgets`:** Untuk menerima input string, namun `gets` tidak direkomendasikan karena rawan error.
+   - **Proses:** adalah langkah-langkah yang harus dilakukan program untuk menghasilkan output.
+   - **Output:**
+     Ada dua fungsi untuk menampilkan output:
+     - **`printf`:** Fungsi utama untuk mencetak teks atau variabel ke layar dalam bentuk teks (string).
+     - **`puts`:** Fungsi yang mencetak teks atau variabel tanpa memerlukan format(otomatis menambahkan baris baru).
+
+Latihan pada joob sheet ini, yaitu:
+
+1. **Program sambutan pengguna:** program yang berfungsi untuk meminta input nama lengkap dari pengguna dan kemudian menampilkan pesan sambutan menggunakan nama tersebut.Program ini bertujuan untuk berinteraksi dengan penggunanya.
+2. **Program kalkulator nilai mahasiswa:** program ini untuk menghitung nilai akhir seorang mahasiswa berdasarkan input dari beberapa komponen nilai, yaitu Nilai Praktikum, Nilai UTS (Ujian Tengah Semester), dan Nilai UAS (Ujian Akhir Semester). Program ini akan meminta input berupa Nama, NIM, Program Studi, Fakultas, dan nilai-nilai terkait dan kemudian menghitung Nilai Akhir dengan formula yang telah diberikan.
+3. **Program menghitung luas dari segitiga:** program sederhana yang memungkinkan pengguna untuk memasukkan nilai alas dan tinggi segitiga, kemudian menghitung luasnya berdasarkan rumus: `Luas Segitiga=12×Alas×Tinggi`. Dimana pada program ini sudah diketahui bahwa panjang alas segitiga adalah 8 cm dan tinggi segitiga adalah 5 cm, maka dapat langsung menghitung luas segitiga dengan rumus.
+4. **Program menghitung luas persegi panjang:** program ini merupakan program yang sangat sederhana. Yang memungkinkan kita untuk menghitung luas persegi panjang dengan rumus:
+`Luas Persegi Panjang=Panjang×Lebar`. Dimana sudah diketahui panjang = 10 cm dan lebar = 5 cm, sehingga langsung menggunakan rumus di atas untuk menghitung luasnya.
+
 
