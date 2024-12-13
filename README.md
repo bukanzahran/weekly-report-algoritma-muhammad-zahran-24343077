@@ -194,7 +194,7 @@ int main() {
     printf("Rp %d setara dengan $%.2f\n", rupiah, dollar);
     
     return 0;
-} ```
+}
 
 **2. Konversi Suhu**
 
@@ -217,7 +217,7 @@ int main() {
     printf("Fahrenheit: %.2f\n", fahrenheit);
     printf("Reamur: %.2f\n", reamur);
     return 0;
-} ```
+}
 
 **3. Menghitung Volume dan Luas Permukaan Bola**
 Diketahui: Diameter bola = 12 cm.
@@ -240,5 +240,5 @@ int main() {
     printf("Luas permukaan bola: %.2f cm^2\n", luas_permukaan);
 
     return 0;
-} ```
+} 
 
