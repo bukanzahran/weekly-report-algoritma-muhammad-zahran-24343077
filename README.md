@@ -117,3 +117,183 @@ Latihan pada joob sheet ini, yaitu:
 
 
 
+📘 Resume: Variabel, Konstanta, & Tipe Data
+
+🎯 Tujuan Pembelajaran
+
+Mempelajari dasar-dasar pemrograman dalam bahasa C dengan fokus pada:
+
+Variabel: Menyimpan data untuk digunakan dalam program.
+
+Konstanta: Nilai tetap yang tidak dapat diubah selama eksekusi program.
+
+Tipe Data: Mengelompokkan jenis data untuk pengolahan yang sesuai.
+
+Type Casting: Mengonversi tipe data satu ke yang lain.
+
+Keywords: Kata kunci bawaan dalam bahasa C.
+
+🔗 Pokok Materi
+
+1. Variabel
+
+Definisi: Variabel adalah tempat untuk menyimpan nilai yang dapat berubah selama program berjalan.
+
+Cara Penulisan: Tipe data diikuti nama variabel, misalnya:
+
+int tinggi;
+float berat = 49.5;
+
+Aturan Penulisan:
+
+Nama variabel tidak boleh dimulai dengan angka atau simbol.
+
+Tidak boleh menggunakan kata kunci bawaan.
+
+Case-sensitive (misalnya, nama dan Nama adalah variabel yang berbeda).
+
+Gunakan underscore (‘_’) untuk nama variabel yang lebih dari satu kata, misalnya: nama_lengkap.
+
+2. Konstanta
+
+Definisi: Variabel yang nilainya tetap sepanjang program.
+
+Cara Penulisan:
+
+Menggunakan ****#defineContoh:
+
+#define PHI 3.14
+
+Menggunakan ****constContoh:
+
+const float PHI = 3.14;
+
+Catatan: Nama konstanta biasanya menggunakan huruf kapital untuk membedakannya.
+
+3. Tipe Data Fundamental
+
+Definisi: Jenis data yang dapat disimpan dalam variabel.
+
+Jenis-Jenis Tipe Data di C:
+
+Char: Menyimpan satu karakter, misalnya: 'A'.
+
+Integer: Menyimpan bilangan bulat, misalnya: 100.
+
+Float: Menyimpan bilangan desimal, misalnya: 3.14.
+
+Double: Mirip dengan float, tetapi memiliki presisi lebih tinggi.
+
+Void: Menunjukkan ketiadaan nilai.
+
+Format Penulisan:
+
+Gunakan tanda petik tunggal untuk char ('A').
+
+Gunakan titik (.) untuk bilangan desimal (3.14).
+
+Untuk mencetak float dengan presisi dua angka, gunakan:
+
+printf("%.2f", nilai_float);
+
+4. Type Casting
+
+Definisi: Mengubah tipe data dari satu jenis ke jenis lainnya.
+
+Contoh:
+
+int a = 10;
+float b = (float) a; // Mengubah integer menjadi float
+
+Catatan:
+Jika operasi dilakukan antara dua integer, hasilnya akan dibulatkan ke bawah.
+
+5. Keywords
+
+Definisi: Kata-kata yang telah ditentukan oleh bahasa C untuk fungsi tertentu, seperti:
+
+int, float, return, if, else, dll.
+
+Catatan: Kata kunci ini tidak dapat digunakan sebagai nama variabel atau fungsi.
+
+📊 Contoh Latihan
+
+1. Konversi Rupiah ke Dollar
+
+Buat program untuk menghitung nilai tukar Rupiah ke Dollar, dengan asumsi:
+
+1 Dollar = Rp 14.250.
+
+Input: Rp 2.500.000.
+
+Output: Berapa Dollar yang harus diberikan.
+
+Contoh kode:
+
+#include <stdio.h>
+#define KURS 14250
+
+int main() {
+    int rupiah = 2500000;
+    float dollar = (float)rupiah / KURS;
+    printf("Rp %d setara dengan $%.2f\n", rupiah, dollar);
+    return 0;
+}
+
+2. Konversi Suhu
+
+Mengonversi suhu dari Celcius ke Kelvin, Fahrenheit, dan Reamur menggunakan rumus:
+
+Kelvin: k = c + 273.15
+
+Fahrenheit: f = (c * 1.8) + 32
+
+Reamur: r = c * 0.8
+
+Contoh kode:
+
+#include <stdio.h>
+
+int main() {
+    float celcius, kelvin, fahrenheit, reamur;
+    printf("Masukkan suhu dalam Celcius: ");
+    scanf("%f", &celcius);
+
+    kelvin = celcius + 273.15;
+    fahrenheit = (celcius * 1.8) + 32;
+    reamur = celcius * 0.8;
+
+    printf("Kelvin: %.2f\n", kelvin);
+    printf("Fahrenheit: %.2f\n", fahrenheit);
+    printf("Reamur: %.2f\n", reamur);
+
+    return 0;
+}
+
+3. Menghitung Volume dan Luas Permukaan Bola
+
+Diketahui: Diameter bola = 12 cm.
+
+Rumus:
+
+Volume: V = (4/3) * π * r^3
+
+Luas Permukaan: A = 4 * π * r^2
+
+Contoh kode:
+
+#include <stdio.h>
+#define PHI 3.14
+
+int main() {
+    float diameter = 12.0;
+    float radius = diameter / 2.0;
+    float volume = (4.0/3.0) * PHI * radius * radius * radius;
+    float luas_permukaan = 4 * PHI * radius * radius;
+
+    printf("Volume bola: %.2f cm^3\n", volume);
+    printf("Luas permukaan bola: %.2f cm^2\n", luas_permukaan);
+
+    return 0;
+}
+
