@@ -184,14 +184,17 @@ Input: Rp 2.500.000.
 Output: Berapa Dollar yang harus diberikan.
 
 Contoh kode:
+```c
 #include <stdio.h>
 #define KURS 14250
+
 int main() {
     int rupiah = 2500000;
     float dollar = (float)rupiah / KURS;
     printf("Rp %d setara dengan $%.2f\n", rupiah, dollar);
+    
     return 0;
-}
+} ```
 
 **2. Konversi Suhu**
 
@@ -201,7 +204,7 @@ Fahrenheit: f = (c * 1.8) + 32
 Reamur: r = c * 0.8
 
 Contoh kode:
-
+```c
 #include <stdio.h>
 int main() {
     float celcius, kelvin, fahrenheit, reamur;
@@ -214,7 +217,7 @@ int main() {
     printf("Fahrenheit: %.2f\n", fahrenheit);
     printf("Reamur: %.2f\n", reamur);
     return 0;
-}
+} ```
 
 **3. Menghitung Volume dan Luas Permukaan Bola**
 Diketahui: Diameter bola = 12 cm.
@@ -223,9 +226,10 @@ Volume: V = (4/3) * π * r^3
 Luas Permukaan: A = 4 * π * r^2
 
 Contoh kode:
-
+```c
 #include <stdio.h>
 #define PHI 3.14
+
 int main() {
     float diameter = 12.0;
     float radius = diameter / 2.0;
@@ -236,5 +240,5 @@ int main() {
     printf("Luas permukaan bola: %.2f cm^2\n", luas_permukaan);
 
     return 0;
-}
+} ```
 
